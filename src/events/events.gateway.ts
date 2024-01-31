@@ -32,7 +32,7 @@ export class EventsGateway {
     console.log('Handling published event to Socket server');
 
     // broadcast an event to all connections except the publishing socket
-    client.broadcast.emit('event');
+    client.broadcast.emit('event', data);
 
     return data;
   }
