@@ -11,3 +11,4 @@
    e. send a response to all other clients connected to the websocket (excluding the one that sent the initial message): `client.broadcast.emit('event');` so they can react in realtime.
 5. Install: `pnpm i socket.io-client ts-node`
 6. Create a client example with ts-node, one client to subscribe, another to publish an event - we should see that when the publishing process sends a signal to the server, the subscribing client knows what happened on the server (no need for polling!) - see `./client/`.
+7. Send through a payload from one client to the other!
